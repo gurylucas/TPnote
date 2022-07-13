@@ -9,4 +9,5 @@ X = [[100, 3, 0]]
 prediction = model.predict(X)
 actual_result = prediction
 
-assert 0 < actual_result , "C kc"
+def test_pred():
+    assert 0 < actual_result , "C kc"
