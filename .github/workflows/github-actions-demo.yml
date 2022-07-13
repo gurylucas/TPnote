@@ -12,12 +12,12 @@ jobs:
       - run: pip install sklearn
       - run: python test_model.py
       - run: pip install pytest
-      #- run: pytest test_model.py
+      - run: pytest test_model.py
       - run: pip install streamlit
       - run: pip install -U Jinja2
       - run: streamlit run model_dashboard.py &
       - run: npm install -g n
       - run: npm install cypress
       - run: npx cypress open &
-      - name: Cypress run
-        uses: cypress-io/github-action@v4
+      - name: Cypress run 
+        uses: cypress-io/github-action@v4 &
