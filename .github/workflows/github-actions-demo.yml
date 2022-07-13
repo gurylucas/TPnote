@@ -10,8 +10,8 @@ jobs:
       - run: python test_model.py
       - run: pip install pytest
       - run: pytest test_model.py
-      - run: pip install streamlit
-      - run: pip install -U Jinja2
+      #- run: pip install streamlit
+      #- run: pip install -U Jinja2
       #- run: streamlit run model_dashboard.py &
       - run: docker build -t streamlit .
       - run: docker run -p 8501:8501 -d streamlit 
@@ -20,4 +20,5 @@ jobs:
       #- run: npx cypress open &
       - name: Cypress run 
         uses: cypress-io/github-action@v4 
+      
       
