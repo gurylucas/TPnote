@@ -1,6 +1,6 @@
 describe('empty spec', () => {
   it('Validation de la page', () => {
-    cy.visit('http://10.1.0.200:8501')
+    cy.visit(st.get_url())
     cy.get('input').eq(0).clear().type('100').type('{enter}')
     cy.get('input').eq(1).clear().type('2').type('{enter}')
     cy.get('input').eq(2).clear().type('0').type('{enter}')
