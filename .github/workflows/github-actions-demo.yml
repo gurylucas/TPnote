@@ -9,6 +9,7 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - uses: actions/checkout@v2
       - run: pip install joblib
+      - run: pip install sklearn
       - run: python test_model.py
       - run: pip install streamlit
       - run: pip install -U Jinja2
