@@ -17,3 +17,4 @@ jobs:
       - run: npm install -g n
       - run: npm install cypress
       - run: npx cypress open &
+      - run: cypress run --spec cypress/e2e/testFoncti.cy.js
