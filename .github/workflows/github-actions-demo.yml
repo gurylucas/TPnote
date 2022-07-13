@@ -13,4 +13,4 @@ jobs:
       - run: streamlit run model_dashboard.py &
       - run: npm install -g n
       - run: npm install cypress
-      - run: npx cypress open
+      - run: npx cypress open &
