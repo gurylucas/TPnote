@@ -8,7 +8,7 @@ describe('empty spec', () => {
     cy.get('p').then((valeur) => {
       var val = parseFloat(valeur[0].innerText.substr(27))
       //console.log(typeof val)
-      expect(val).to.be.greaterThan(1000000)
+      expect(val).to.be.greaterThan(10000)
       //cy.log('Prix supérieur a 10000', val > 10000)
     })
   })
