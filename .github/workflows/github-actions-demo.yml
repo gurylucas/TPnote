@@ -14,7 +14,7 @@ jobs:
       - run: pip install -U Jinja2
       #- run: streamlit run model_dashboard.py &
       - run: docker build -t streamlit .
-      - run: docker run -p 8501:8501 streamlit &
+      - run: docker run -p 8501:8501 -d streamlit 
       - run: npm install -g n
       - run: npm install cypress
       #- run: npx cypress open &
