@@ -8,4 +8,4 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - uses: actions/checkout@v2
-      #- run: python test_lib.py
+      - run: streamlit run model_dashboard.py
