@@ -12,4 +12,5 @@ jobs:
       - run: pip install -U Jinja2
       - run: streamlit run model_dashboard.py &
       - run: npm install -g n
+      - run: pip install cypress
       - run: npx cypress open
